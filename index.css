@@ -1,0 +1,20 @@
+/*Copyright (c) Regal Disclaimer 2014 All Rights Reserved.
+Contact: regaldisclaimer@gmail.com for all usage permissions*/
+html, body {
+	height:100vh;
+	font-family: 'Roboto', sans-serif;
+	background-color: #f1f1f1;
+	font-weight: 300;
+	font-size: 24pt;
+	text-align: center;
+	color: #3B2D38;
+	margin: 0px;
+}
+
+p{
+	text-align:center;
+}
+
+.title {
+	font-size: 48px;
+}
