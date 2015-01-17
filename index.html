@@ -9,9 +9,61 @@ Contact: regaldisclaimer@gmail.com for all usage permissions -->
 </head>
 
 <body>
-	<p class='title'>Under construction...</p>
-	<p>Regal Disclaimer is love</p>
-	<p>Regal Disclaimer is life</p>
+
+	<div class="book text" spellcheck="false" contentEditable="true">
+		<h1>Regal Disclaimer</h1>
+		<h2>Developer without an audience.</h2>
+		
+		<p>Welcome. You came to this place without a premise. You take a good look around, and everything is foreign to you. Of course, they are foreign; this must be your first time. What is this place? It seems a paracosm brought to life. A game without a manual. A world without purpose. Or is it?</p>
+
+		<p>Everything seems so novel. They must be novel to you, for they are new to you. But are they? Surely you do not remember being here before. But do you remember the day you were born?</p>
+
+		<p>Soon enough, you meet others. Luckily, you are not alone. You feel a sense of warmth inside, and wonder why you feel this way. Surely, all of this can be a fabrication, not only the feeling, but the meaning of feeling itself. The concept of semantics itself may just be invented after all.</p>
+
+		<p>The thought consumes you, and the thought becomes you. You become thought. Sudenly, you hear a message being clamored: "Read the console messages!" Console messages? "Hah, I'm not THAT gullible!" say most, dismissing the alert. Soon, you learn that console logs are accessible via 'Ctrl-Shift-J' It seems sketchy, so you hesitate.</p>
+
+		<p>Console log message? If this world was made for visitors, an audience, the content will surely be displayed on the viewport, not on the console!</p>
+
+		<p>Your journey is starting to end. Or it may have already ended. You may not have found a purpose, and have ended the journey prematurely. Why were you brought here? You may have tried to look for the console log, or you may not have. The viewport of the journey does not seem to be clear as to what you're supposed to be doing here anyway.</p>
+
+		<p>At last, you reach the end of they journey. How was it?</p>
+	</div>
+
+	<div class="overlay"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54ad6bc83a3bc1fd" async="async"></script>
+
 </body>
+<script>
+	$(document).ready(function(){
+	  
+		var text=$(".text").html();
+		var top=$("<div/>").insertBefore(".text");
+		var bottom=$("<div/>").insertBefore(".text");
+	  
+		$("<div/>").addClass("book blur blur-top").html(text).appendTo(top);
+		$("<div/>").addClass("book blur blur-bottom").html(text).appendTo(bottom);
+		$("<div/>").addClass("book blur blur-top").html(text).appendTo(top);
+		$("<div/>").addClass("book blur blur-bottom").html(text).appendTo(bottom);
+	  
+		$(".text").on("input",function(){
+	    	$(".blur").html($(".text").html());
+		});
+	});
+	//
+	console.log("The text you read on the screen is editable. It was not a forced journey, and you were free to edit the text all along.")
+	console.log("'...seek, and you'll find; knock and the door will be opened to you'");
+	console.log("'Then you will know the Truth, and the Truth will set you free'");
+	console.log("> var about() = function(){process.env.ABOUT};");
+
+	function about(){
+			console.log('education() = "Pursuing B.A. in Natural Sciences";');
+			console.log('education(compSci) = Null;');
+			console.log('workExperience() = "Internship & Shadowing in Medicine";');
+			console.log('workExperience(compSci) = Null;');
+			console.log('regaldisclaimer@gmail.com');
+	}
+</script>
 </html>
