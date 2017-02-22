@@ -15,11 +15,10 @@ body {
 	opacity: 0.25;
 	font-family: Georgia, Baskerville, serif;
 	font-size: 1.5em;
-	position: absolute;	
-	top: 0px;
-	left: 200px;
+	position: absolute;
+	top: 5vh;
+	left: 10vw;
 	transform-origin: 50% 600px;
-	transform: scale(1, 1) perspective(100vw) rotateY(20deg) rotateX(8deg);
 	text-shadow: 0 0 3px rgba(34, 34, 34, 0.6), 0 0 1px rgba(34, 34, 34, 0.2);
 	text-align: justify;
 	cursor: default;
@@ -31,7 +30,7 @@ body {
 
 h1 {
 	font-weight: normal;
-	font-size: 101px;
+	font-size: 82px;
 	text-align: center;
 }
 
@@ -39,34 +38,6 @@ h2 {
 	font-weight: normal;
 	font-size: 32px;
 	text-align: center;
-}
-
-.book.blur {
-	pointer-events: none;
-}
-
-.book.blur-top:nth-child(1) {
-	transform: scale(1, 1) perspective(100vw) rotateY(20.2deg) rotateX(8.2deg);
-}
-
-.book.blur-bottom:nth-child(1) {
-	transform: scale(1, 1) perspective(100vw) rotateY(19.8deg) rotateX(7.8deg);
-}
-
-.book.blur-top:nth-child(2) {
-	transform: scale(1, 1) perspective(100vw) rotateY(20.4deg) rotateX(8.4deg);
-}
-
-.book.blur-bottom:nth-child(2) {
-	transform: scale(1, 1) perspective(100vw) rotateY(19.6deg) rotateX(7.6deg);
-}
-
-.book.blur1 {
-	transform: scale(1, 1) perspective(100vw) rotateY(20.4deg) rotateX(8.4deg);
-}
-
-.book.blur2 {
-	transform: scale(1, 1) perspective(100vw) rotateY(19.6deg) rotateX(7.6deg);
 }
 
 .overlay {
@@ -79,4 +50,9 @@ h2 {
 	background: linear-gradient(rgba(220, 220, 220, 0.25), rgba(220, 220, 220, 0));
 	z-index: 101;
 	pointer-events: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }

@@ -5,58 +5,34 @@ Contact: regaldisclaimer@gmail.com for all usage permissions -->
 	<title>Regal Disclaimer</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' type='text/css' href='index.css'> 
+	<link rel='stylesheet' type='text/css' href='index.css'>
 </head>
 
 <body>
 
-	<div class="book text" spellcheck="false" contentEditable="true">
+	<div class="book text">
 		<h1>About Us</h1>
-		<h2>Regal Disclaimer Software Development Services - "RD SDS"</h2>
+		<h2>Regal Disclaimer</h2>
+		<h3>Technical Consulting</h3>
+			<p>We are young experts with experience in new software technologies.</p>
+			<p>We integrate seamlessly into your current team, providing guidance and resource as necessary. The team will become more mindful of security risks, develop a more robust product with higher performance.</p>
+			<p>Give your team a boost without a dramatic increase to your payroll!</p>
 
-		<p>RD SDS is more than a codeshop - we are software architects and engineers
-			who deliver a rock-solid and efficient business solution using a suite of
-			modern software development technologies.
-		</p>
+		<h3>Product Development</h3>
+			<p>We are product architects, and understand hardware, software, and users.</p>
+			<p>We do more than writing code. We participate in designing the product in the ecosystem, giving us an understanding of your company's goals, as well as the product users' needs. This allows us to better design the product architecture with many moving parts: hardware, front-end framework, middleware, back-end logic, database structure, third-party packages, APIs, secure certificates, CDNs, backups, payment processing, and the list goes on...</p>
+			<p>The product architecture that we design are highly modular, which make them easy to build and test. Easy building means lower costs, and easy test means robust and secure!</p>
 
-		<p>Traditional software development services offered by our competitors are
-			made to require updates and troubleshooting. Their project workflow rely
-			on a client-generated specification, to which poorly tested makeshift
-			software is added on until requirements are met. This often leads to
-			unnecessary and	inefficient code, as well as poor control over quality. 
-			The process resembles tacking on bits of clay until the 'pot' is able to
-			hold all the contents - and will often have issues with structural
-			integrity and require maintenance.
-		</p>
-			
-		<p>RD SDS offers something entirely different. Instead of going through the
-			time consuming and expensive work of shaping clay around the contents,
-			only to not be able to predict how strong the resulting structure is,
-			RD SDS utilizes tested and industry proven tools to create a modular
-			architecture, not only saving time and costs, but also requiring
-			less maintenance.
-		</p>
+		<h3>Rapid Prototyping</h3>
+			<p>We are highly adaptive to your needs.</p>
+			<p>Not all clients require the development of a full product architecture. For early business development and research, rapid prototyping is more appropriate.</p>
+			<p>The Pareto principle (80/20 rule) will help you pioneer new products within short time and smaller costs. You can test the waters with the prototype, and make rapid changes to the project. Once you're happy with the direction, you can easily transition into full product development without losing valuable progress.</p>
+			<p>Different jobs need different tools. Rapidly prototyping effectively requires specific tools that are not often used in traditional software development. Our knowledge and experience with prototyping tools makes us the perfect fit for your prototyping needs!</p>
 
-		<p>With RD SDS, Each client project begins with a general survey of the client's
-			past solutions, current needs and future goals. From this survey, multiple
-			blueprints are generated with information on the costs and benefits of each
-			solution set. These solutions not only meet the client's needs and goals in
-			an efficient manner, but also often correct and improve previously installed
-			parts of the architecture. The result is a robust software architecture plan
-			that improves the client's overall software stack, rather than merely adding
-			on a module that does not work well with the rest of the infrastructure.
-		</p>
-
-		<p>After the client decides on a solution set that they are happy with, the
-			software blueprint is turned into a software architecture built by tested
-			and reliable tools. Thanks to our experience with modern tools, we are often
-			able to offer our robust solutions at much lower price as well as faster
-			time. Further, the disciplined architecture makes inspection and future
-			upgrades inexpensive, manageable, and easy.
-		</p>
-
-		<p>Contact us at regaldisclaimer@gmail.com to discuss your projects and find a solution!</p>
-
+		<h3>Contact Us</h3>
+		<p>Send us an email at <a target="_blank" href="mailto:regaldisclaimer@gmail.com">regaldisclaimer@gmail.com</a> and tell us about your project! We will find you solutions to help you create awesome software products!</p>
+		<p><a target="_blank" href="http://www.regaldisclaimer.com/">You can find case studies on our main website</a></p>
+		<p>...</p>
 		<p>[As of 2017-01-01]</p>
 		<p>RegalDisclaimer is the private contract service provided by Valuace LLC</p>
 
@@ -71,16 +47,16 @@ Contact: regaldisclaimer@gmail.com for all usage permissions -->
 </body>
 <script>
 	$(document).ready(function(){
-	  
+
 		var text=$(".text").html();
 		var top=$("<div/>").insertBefore(".text");
 		var bottom=$("<div/>").insertBefore(".text");
-	  
+
 		$("<div/>").addClass("book blur blur-top").html(text).appendTo(top);
 		$("<div/>").addClass("book blur blur-bottom").html(text).appendTo(bottom);
 		$("<div/>").addClass("book blur blur-top").html(text).appendTo(top);
 		$("<div/>").addClass("book blur blur-bottom").html(text).appendTo(bottom);
-	  
+
 		$(".text").on("input",function(){
 	    	$(".blur").html($(".text").html());
 		});
