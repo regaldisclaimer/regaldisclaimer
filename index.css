@@ -4,7 +4,6 @@ html {
 body {
 	height: 100%;
 	background: linear-gradient(180deg, rgba(100, 100, 100, 0.10), rgba(100, 100, 100, 0.45));
-	background-size: 100vw 100vh;
 	background-attachment: fixed;
 }
 
